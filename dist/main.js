@@ -41,7 +41,7 @@ var d4lIcon = L.icon({
 });
 
 var encoreIcon = L.icon({
-  iconUrl: 'https://github.com/cyrusgis/ministrymap/blob/main/assets/encore.png', 
+  iconUrl: 'https://raw.githubusercontent.com/cyrusgis/ministrymap/main/assets/encore.png', 
   iconSize: [32, 32], // Adjust the size of the icon according to your needs
 });
 
