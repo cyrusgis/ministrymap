@@ -36,7 +36,7 @@ L.control.scale().addTo(map);
 
 //icons
 var d4lIcon = L.icon({
-  iconUrl: '../assets/d4l.png', 
+  iconUrl: 'https://raw.githubusercontent.com/cyrusgis/ministrymap/main/assets/d4l.png', 
   iconSize: [32, 32], // Adjust the size of the icon according to your needs
 });
 
@@ -46,17 +46,17 @@ var encoreIcon = L.icon({
 });
 
 var ismIcon = L.icon({
-  iconUrl: '../assets/ism.png', 
+  iconUrl: 'https://raw.githubusercontent.com/cyrusgis/ministrymap/main/assets/ism.png', 
   iconSize: [32, 32], // Adjust the size of the icon according to your needs
 });
 
 var militaryIcon = L.icon({
-  iconUrl: '../assets/military.png', 
+  iconUrl: 'https://raw.githubusercontent.com/cyrusgis/ministrymap/main/assets/military.png', 
   iconSize: [26, 26], // Adjust the size of the icon according to your needs
 });
 
 var nationsIcon = L.icon({
-    iconUrl: '../assets/nations.png', 
+    iconUrl: 'https://raw.githubusercontent.com/cyrusgis/ministrymap/main/assets/nations.png', 
     iconSize: [24, 24], // Adjust the size of the icon according to your needs
   });
 
