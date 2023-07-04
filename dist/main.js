@@ -35,6 +35,12 @@ L.control.scale().addTo(map);
 // }).addTo(map);
 
 //icons
+
+var collegiateIcon = L.icon({
+  iconUrl: 'https://raw.githubusercontent.com/cyrusgis/ministrymap/main/assets/collegiate.png', 
+  iconSize: [32, 32], // Adjust the size of the icon according to your needs
+});
+
 var d4lIcon = L.icon({
   iconUrl: 'https://raw.githubusercontent.com/cyrusgis/ministrymap/main/assets/d4l.png', 
   iconSize: [32, 32], // Adjust the size of the icon according to your needs
@@ -63,15 +69,8 @@ var nationsIcon = L.icon({
 //Colleiate Layer
 var collegiateFT = L.geoJSON(collegiate, {
     pointToLayer: function (feature, latlng) {
-      // Create a marker with custom styling
-      return L.circleMarker(latlng, {
-        radius: 10,
-        fillColor: "black",
-        color: "#000",
-        weight: 1,
-        opacity: 1,
-        fillOpacity: 0.8
-      });
+      // Create a marker with custom icon
+      return L.marker(latlng, { icon: collegiateIcon });
     },
     onEachFeature: function (feature, layer) {
       // Bind a popup to each marker
@@ -85,15 +84,8 @@ var collegiateFT = L.geoJSON(collegiate, {
   
 var collegiatePT = L.geoJSON(collegiate, {
     pointToLayer: function (feature, latlng) {
-      // Create a marker with custom styling
-      return L.circleMarker(latlng, {
-        radius: 10,
-        fillColor: "black",
-        color: "#000",
-        weight: 1,
-        opacity: 1,
-        fillOpacity: 0.8
-      });
+      // Create a marker with custom icon
+      return L.marker(latlng, { icon: collegiateIcon });
     },
     onEachFeature: function (feature, layer) {
       // Bind a popup to each marker
@@ -107,15 +99,8 @@ var collegiatePT = L.geoJSON(collegiate, {
   
   var collegiateNAV = L.geoJSON(collegiate, {
     pointToLayer: function (feature, latlng) {
-      // Create a marker with custom styling
-      return L.circleMarker(latlng, {
-        radius: 10,
-        fillColor: "black",
-        color: "#000",
-        weight: 1,
-        opacity: 1,
-        fillOpacity: 0.8
-      });
+      // Create a marker with custom icon
+      return L.marker(latlng, { icon: collegiateIcon });
     },
     onEachFeature: function (feature, layer) {
       // Bind a popup to each marker
